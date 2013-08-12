@@ -44,7 +44,7 @@
               {if empty($DISPLAY_BOOKS) == false}
 
                 {if $PAGES > 1}
-                  <ul class="pagination">
+                  <ul class="pagination pagination-sm">
                     {if $smarty.get.page > 0}
                       <li><a href="index.php?collection={$smarty.get.collection}&page={$smarty.get.page-1}">&laquo;</a></li>
                     {/if}
