@@ -70,7 +70,7 @@ function readCalibreDatabase(Smarty &$smarty, $collection_path,$books_per_page) 
         $_GET['page'] = 0;
     }
 
-    $booksQuery = queryDB($db,'SELECT * FROM books ORDER BY sort DESC LIMIT '.$_GET['page']*$books_per_page.','.$books_per_page);
+    $booksQuery = queryDB($db,'SELECT * FROM books ORDER BY sort ASC LIMIT '.$_GET['page']*$books_per_page.','.$books_per_page);
     $books = $booksQuery->fetchAll();
 
     $display_books = array();
