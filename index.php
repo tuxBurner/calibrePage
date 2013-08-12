@@ -32,6 +32,9 @@ if(count($scanned_directory) > 0) {
     foreach($scanned_directory as $dir_entrance) {
       $file_path = $COLLECTIONS_ROOT_PATH.$dir_entrance;
       if(is_dir($file_path) == true) {
+          if(isset($_GET['collection']) == false) {
+              $_GET['collection'] = $dir_entrance;
+          }
           $collection_directories[] = $dir_entrance;
       }
     }
