@@ -72,7 +72,7 @@
                       <tr>
                         <td>
                           {if $DISPLAY_BOOK->book['has_cover'] == 1}
-                            <img src="collections/{$smarty.get.collection}/{$DISPLAY_BOOK->book['path']}/cover.jpg" class="book_cover" />
+                            <img src="thumber.php?img=collections/{$smarty.get.collection}/{$DISPLAY_BOOK->book['path']}/cover.jpg&h=25" class="book_cover" />
                           {/if}
                         </td>
                         <td>{$DISPLAY_BOOK->book['title']}</td>
