@@ -208,6 +208,8 @@ private function _calculateThumbDimensions() {
 	// why not use those to label the file properly?
 	// --------------------------------------------------------------------------
 
+	$pathParts = pathinfo($this->pathToImage);
+
     $thumbImageName = str_replace('/','',$this->pathToImage);
 
 	$this->pathToThumb = PATH_TO_THUMBS
